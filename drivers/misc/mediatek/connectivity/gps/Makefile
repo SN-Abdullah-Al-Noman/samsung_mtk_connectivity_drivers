@@ -24,7 +24,7 @@ ifneq ($(KERNEL_OUT),)
 endif
 
 ifndef TOP
-    TOP := $(srctree)/..
+    TOP := $(srctree)
 endif
 ifeq ($(TARGET_BUILD_VARIANT),$(filter $(TARGET_BUILD_VARIANT),userdebug user))
     ldflags-y += -s
